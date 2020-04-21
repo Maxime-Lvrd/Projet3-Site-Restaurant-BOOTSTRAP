@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Fifty's American Diner</title>
+    <link rel="stylesheet" href="assets/libs/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="assets/libs/css/bootstrap.css">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap/CSS -->
+    <link rel="stylesheet" href="assets/libs/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/CSS/screen.css">
+
+</head>
+
+<body class=" w-100">
+    <!-- ====================== en tete nav barre + titre avec photo -->
+    <header>
+        <nav class="col-12 navbar bg-dark d-flex justify-content-center align-items-center">
+            <!-- Menu deroulant -->
+
+            <ul>
+                <li class="logo mr-5 pb-2">
+                    <img class="logo float-xs-center float-md-left align-items-start" src="assets/img/logo.png"
+                        alt="logoBurger">
+                </li>
+                <li class="menu"><a class="text-light text-decoration-none col-sd-4 text-uppercase" href="#accueil">Accueil</a></li>
+                <li class="deroulant text-uppercase text-light text-decoration-none menu"><a href="#menu">Menu &ensp;</a>
+                    <ul class="sous menu">
+                        <li class="menu"><a class="text-decoration-none bg-danger text-light text-uppercase" href="#burgers">Burgers</a></li>
+                        <li class="menu"><a class="text-decoration-none bg-danger text-light text-uppercase" href="#pimp">Pimp ton burger</a></li>
+                        <li class="menu"><a class="text-decoration-none bg-danger text-light text-uppercase" href="#salads">salades</a></li>
+                        <li class="menu"><a class="text-decoration-none bg-danger text-light text-uppercase" href="#desserts">desserts</a></li>
+                    </ul>
+                </li>
+                <li><a class="text-light text-decoration-none text-uppercase menu" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- ================= zone presentation du resto -->
+    <div id="accueil" class="containerBurger col-12">
+        <p id="pres-resto-text" class="text-light justify-content-center p-2">
+            Le <b>Fifty's americain diner</b><br>
+            est un restaurant à<br>
+            l'ambiance typiquement US.<br>
+            Dans un environnement<br>
+            haut en couleur, il est possible<br>
+            d'y manger sur place ou<br> 
+            à emporter, avec nos préparations<br>
+            aux goûts américains.
+        </p>
+    </div>
+
+
+    <main class=" w-100">
+
+        <!-- SELECTION -->
+        <section class="row py-5 title d-flex justify-content-center">
+            <div class="col-12 bg-dark text-white text-center align-middle  p-0 m-0 mb-5">
+                <h2 class="mb-0 p-2">Sélections</h2>
+            </div>
+
+            <div class="container-dishes col-12 d-flex flex-wrap">
+                <div class="dishes-bloc">
+                    <div class="dishes-img">
+                        <figure></figure>
+                        <div class="text-survol-dishes">
+                            <p class="d-flex justify-content-center">Indiana Burger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dishes-bloc ">
+                    <div class="dishes-img">
+                        <figure></figure>
+                        <div class="text-survol-dishes ">
+                            <p class="d-flex justify-content-center ">Don Gorske</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dishes-bloc">
+                    <div class="dishes-img">
+                        <figure></figure>
+                        <div class="text-survol-dishes">
+                            <p class="d-flex justify-content-center">Salade Cobb</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dishes-bloc">
+                    <div class="dishes-img">
+                        <figure></figure>
+                        <div class="text-survol-dishes">
+                            <p class="d-flex justify-content-center">Salmon Salad</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dishes-bloc">
+                    <div class="dishes-img">
+                        <figure></figure>
+                        <div class="text-survol-dishes">
+                            <p class="d-flex justify-content-center">Milkshake</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dishes-bloc">
+                    <div class="dishes-img">
+                        <figure></figure>
+                        <div class="text-survol-dishes">
+                            <p class="flex d-flex justify-content-center">Café Gourmand</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-carouselle">
+                <div class="bd-example  carouselleselct ">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/Carousell-selection/indianaburger.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/Carousell-selection/dongorske.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/Carousell-selection/saladecobb.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/Carousell-selection/salmonsalad.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/Carousell-selection/milkshake.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/Carousell-selection/cafegourmand.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+         <!-- CARTE DES PLATS -->
+         
+         <div>
+
+            <div class="col-12 bg-dark text-white text-center align-middle  p-0 m-0 mb-5" >
+                <h2 class="mb-0 p-2" id="menu">Carte des Plats</h2>
+            </div>
+         </div>
+            <div class="col-12">
+            <!-- MODAL BURGER MOBILE -->
+            <div class="modalmobile d-flex justify-content-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn text-white p-2 m-3 btn-burger" data-toggle="modal"
+                    data-target="#modalburgermobile">
+                    <p class="m-0" id="burgers">BURGERS</p>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal" id="modalburgermobile" tabindex="-1" role="dialog"
+                    aria-labelledby="modalburgermobileLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-title" id="modalburgermobileLabel">
+                                    <p class="bg-danger text-white p-2">BURGERS</p>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="menu-box-column-dessert">
+                                    <h4>Nos Burgers avec des frites fraîches</h4>
+                                    <span>Échangez les frites de votre Burger !</span>
+                                    <p>Frites de patates douces : +2.50 €<br>
+                                        Frites sauce bleu bacon ciboulette : +3.50 €<br>
+                                        Frites cheddar bacon 18 mois : +3.50 €<br>
+                                        Frites de patates douces parmesan et coriandre : +3.50 €<br></p>
+                                </div>
+                                <div class="menu-box-column-dessert">
+                                    <div>
+                                        <span>Cheeseburger : 12.50€</span><br>
+                                        <p>Bœuf haché, cheddar 9 mois, oignons frits, Iceberg, relish, sauce mayo,
+                                            ketchup et
+                                            french’s yellow
+                                            mustard.</p>
+                                    </div>
+                                    <div>
+                                        <span>Don Gorske: 12.50€</span><br>
+                                        <p>Véritable hommage à la sauce la plus addictive de la planète ! et
+                                            pourquoi ce nom ? Don
+                                            Gorske,
+                                            l’homme qui mange un big Mac par jour depuis 45 ans. Record du monde
+                                            quand même!</p>
+                                    </div>
+                                    <div>
+                                        <span>Golden gate: 12.90€</span><br>
+                                        <p>Bœuf haché, poitrine fumée, Cheddar fermier, onions rings, oinions
+                                            confits, sauces mayo
+                                            et BBQ.</p>
+                                    </div>
+                                    <div>
+                                        <span>Maliblue : 12.90€</span><br>
+                                        <p>Bœuf haché, poitrine fumée, Fourme d’Ambert, Iceberg, pickles, oignons
+                                            confits, sauce
+                                            mayonnaise et
+                                            Porto.</p>
+                                    </div>
+                                    <div>
+                                        <span>Atomic Mushroom : 12.90€</span><br>
+                                        <p>Bœuf haché, comté 18 mois, champignons, oignons confits, sauce
+                                            mayonnaise.</p>
+                                    </div>
+                                    <div>
+                                        <span>Normandy West Coast : 12.90€</span><br>
+                                        <p>Bœuf haché, poitrine fumée, camembert, iceberg, oignons frits, gelée de
+                                            cidre, sauce
+                                            moutarde au
+                                            miel.</p>
+                                    </div>
+                                    <div>
+                                        <span>Brooklyn thirty five : 13.90€</span><br>
+                                        <p>Bœuf haché, poitrine fumée, galette de pomme de terre, raclette de
+                                            Savoie, oignons frits
+                                            et pickles,
+                                            iceberg, sauce creamy black pepper ranch.</p>
+                                    </div>
+                                    <div>
+                                        <span>California love : 13.90€</span><br>
+                                        <p>Bœuf haché, gouda vieux, iceberg, oignons frits, avocat, pickles, sauce
+                                            mayonnaise
+                                            chipotle.</p>
+                                    </div>
+                                    <div>
+                                        <span>Kiss my Hass : 13.90€</span><br>
+                                        <p>Boeuf haché, poitrine fumée, cheddar 9 mois, iceberg, piment jalapenos,
+                                            oignons frits,
+                                            guacamole,
+                                            sauce mayonnaise au piment jalapenos.</p>
+                                    </div>
+                                    <div>
+                                        <span>Black Jack : 13.90€</span><br>
+                                        <p>Pain burger noir, bœuf haché, poitrine fumée, cheddar 9 mois, iceberg,
+                                            oignons frits,
+                                            pickles, sauce
+                                            mayonnaise et BBQ Jack Daniel’s.</p>
+                                    </div>
+                                    <div>
+                                        <span>Hot Mess : 14.90€</span><br>
+                                        <p>Boeuf haché, poitrine fumée, cheddar 9 mois, effiloché de porc, iceberg,
+                                            oignons frits,
+                                            pickles,
+                                            sauce mayonnaise et BBQ.</p>
+                                    </div>
+                                    <div>
+                                        <span>Crispy Fried Chicken : 13.90€</span><br>
+                                        <p>Filet de poulet mariné dans du buttermilk, pané, poitrine fumée, cheddar
+                                            9 mois, iceberg,
+                                            oignons
+                                            frits pickles, sauce mayonnaise.</p>
+                                    </div>
+                                    <div>
+                                        <span>Badhass (végétarien) : 12.90€</span><br>
+                                        <p>Galette de pommes de terre et petits légumes, cheddar 9 mois, avocat,
+                                            iceberg, oignons
+                                            frits, relish,
+                                            sauce mayo au piment japapeños.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- FIN MODAL BURGER MOBILE -->
+
+            <div class="hiddenmenumobile">
+
+                <div class="menu-box-column col-12 mt-8 w-100" style="margin-left: 1px;">
+                    <h3 class="bg-danger text-white p-2 mb-3" id="burgers">BURGERS</h3>
+                    <h4>Nos Burgers avec des frites fraîches</h4>
+                    <h5>Échangez les frites de votre Burger !</h5>
+                    <p>Frites de patates douces : +2.50 €<br>
+                        Frites sauce bleu bacon ciboulette : +3.50 €<br>
+                        Frites cheddar bacon 18 mois : +3.50 €<br>
+                        Frites de patates douces parmesan et coriandre : +3.50 €<br></p>
+                </div>
+                <div class="col-12 menu-box-column-dessert">
+                    <div>
+                        <span>Cheeseburger : 12.50€</span><br>
+                        <p>Bœuf haché, cheddar 9 mois, oignons frits, Iceberg, relish, sauce mayo, ketchup et
+                            french’s yellow
+                            mustard.</p>
+                    </div>
+                    <div>
+                        <span>Don Gorske: 12.50€</span><br>
+                        <p>Véritable hommage à la sauce la plus addictive de la planète ! et pourquoi ce nom ? Don
+                            Gorske,
+                            l’homme qui mange un big Mac par jour depuis 45 ans. Record du monde quand même!</p>
+                    </div>
+                    <div>
+                        <span>Golden gate: 12.90€</span><br>
+                        <p>Bœuf haché, poitrine fumée, Cheddar fermier, onions rings, oinions confits, sauces mayo
+                            et BBQ.</p>
+                    </div>
+                    <div>
+                        <span>Maliblue : 12.90€</span><br>
+                        <p>Bœuf haché, poitrine fumée, Fourme d’Ambert, Iceberg, pickles, oignons confits, sauce
+                            mayonnaise et
+                            Porto.</p>
+                    </div>
+                    <div>
+                        <span>Atomic Mushroom : 12.90€</span><br>
+                        <p>Bœuf haché, comté 18 mois, champignons, oignons confits, sauce mayonnaise.</p>
+                    </div>
+                    <div>
+                        <span>Normandy West Coast : 12.90€</span><br>
+                        <p>Bœuf haché, poitrine fumée, camembert, iceberg, oignons frits, gelée de cidre, sauce
+                            moutarde au
+                            miel.</p>
+                    </div>
+                    <div>
+                        <span>Brooklyn thirty five : 13.90€</span><br>
+                        <p>Bœuf haché, poitrine fumée, galette de pomme de terre, raclette de Savoie, oignons frits
+                            et pickles,
+                            iceberg, sauce creamy black pepper ranch.</p>
+                    </div>
+                    <div>
+                        <span>California love : 13.90€</span><br>
+                        <p>Bœuf haché, gouda vieux, iceberg, oignons frits, avocat, pickles, sauce mayonnaise
+                            chipotle.</p>
+                    </div>
+                    <div>
+                        <span>Kiss my Hass : 13.90€</span><br>
+                        <p>Boeuf haché, poitrine fumée, cheddar 9 mois, iceberg, piment jalapenos, oignons frits,
+                            guacamole,
+                            sauce mayonnaise au piment jalapenos.</p>
+                    </div>
+                    <div>
+                        <span>Black Jack : 13.90€</span><br>
+                        <p>Pain burger noir, bœuf haché, poitrine fumée, cheddar 9 mois, iceberg, oignons frits,
+                            pickles, sauce
+                            mayonnaise et BBQ Jack Daniel’s.</p>
+                    </div>
+                    <div>
+                        <span>Hot Mess : 14.90€</span><br>
+                        <p>Boeuf haché, poitrine fumée, cheddar 9 mois, effiloché de porc, iceberg, oignons frits,
+                            pickles,
+                            sauce mayonnaise et BBQ.</p>
+                    </div>
+                    <div>
+                        <span>Crispy Fried Chicken : 13.90€</span><br>
+                        <p>Filet de poulet mariné dans du buttermilk, pané, poitrine fumée, cheddar 9 mois, iceberg,
+                            oignons
+                            frits pickles, sauce mayonnaise.</p>
+                    </div>
+                    <div>
+                        <span>Badhass (végétarien) : 12.90€</span><br>
+                        <p>Galette de pommes de terre et petits légumes, cheddar 9 mois, avocat, iceberg, oignons
+                            frits, relish,
+                            sauce mayo au piment japapeños.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- MODAL PIMP TON BURGER MOBILE -->
+            <div class="modalmobile d-flex justify-content-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn text-white p-2 m-3 btn-pimp" data-toggle="modal"
+                    data-target="#modalpimpmobile">
+                    <p class="m-0" id="pimp">SUPPLÉMENTS</p>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal" id="modalpimpmobile" tabindex="-1" role="dialog"
+                    aria-labelledby="modalpimpmobileLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-title" id="modalpimpmobileLabel">
+                                    <h3 class="bg-danger text-white p-2">PIMP TON BURGER</h3>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="menu-box-column-dessert">
+                                    <span>Supplément</span><br>
+                                    <p>Onion rings +1.00€<br>
+                                        Oeuf au plat +1.00€<br>
+                                        Poitrine fumée +1.00€<br>
+                                        Galette de pomme de terre +2.00€<br>
+                                        Steak +3.50€<br><br></p>
+                                    <span>Accompagnement Supplémentaire</span><br>
+                                    <p>Frites fraîches classique : 3.00 €<br>
+                                        Frites de patates douces : 4.50 €<br>
+                                        Frites cheddar : 4.50 €<br>
+                                        Frites sauce bleu bacon ciboulette : 5.00 €<br>
+                                        Frites cheddar bacon : 5.50 €<br>
+                                        Frites de patates douces parmesan et coriandre : 5.50 €<br><br></p>
+                                    <span>Option végétarien</span><br>
+                                    <p>Steak Végétal Beyond Meat, disponible en remplacement de la viande dans tout les
+                                        burgers ci-dessous
+                                        +2,50€ <br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- FIN MODAL PIMP TON BURGER MOBILE-->
+
+            <div class="hiddenmenumobile">
+
+                <div class="menu-box-column col-12">
+                    <h3 class="bg-danger text-white p-2 mb-3" id="pimp">PIMP TON BURGER</h3>
+                    <div>
+                        <span>Supplément</span><br>
+                        <p>Onion rings +1.00€<br>
+                            Oeuf au plat +1.00€<br>
+                            Poitrine fumée +1.00€<br>
+                            Galette de pomme de terre +2.00€<br>
+                            Steak +3.50€<br><br></p>
+                        <span>Accompagnement Supplémentaire</span><br>
+                        <p>Frites fraîches classique : 3.00 €<br>
+                            Frites de patates douces : 4.50 €<br>
+                            Frites cheddar : 4.50 €<br>
+                            Frites sauce bleu bacon ciboulette : 5.00 €<br>
+                            Frites cheddar bacon : 5.50 €<br>
+                            Frites de patates douces parmesan et coriandre : 5.50 €<br><br></p>
+                        <span>Option végétarien</span><br>
+                        <p>Steak Végétal Beyond Meat, disponible en remplacement de la viande dans tout les
+                            burgers ci-dessous
+                            +2,50€ <br></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- MODAL SALADES MOBILE-->
+            <div class="modalmobile d-flex justify-content-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn text-white p-2 m-3 btn-salad" data-toggle="modal"
+                    data-target="#modalsalademobile">
+                    <p class="m-0">SALADES</p>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal" id="modalsalademobile" tabindex="-1" role="dialog"
+                    aria-labelledby="modalsalademobileLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-title" id="modalsalademobileLabel">
+                                    <h3 class="bg-danger text-white p-2">SALADES</h3>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="menu-box-column-dessert">
+                                    <div>
+                                        <span>Cæsar salad: 11.90€</span><br>
+                                        <p>Salade, tomates, parmesan, croûtons, filet de poulet pané, sauce
+                                            cæsar.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <span>Salmon salad : 12.90€</span><br>
+                                        <p>Salade, tomates confites, concombre, avocat, noix, féta, saumon fumé.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <span>Cobb : 12.90€</span><br>
+                                        <p>Salade, Filet de poulet pané, poitrine fumée, avocat, oeuf dur,
+                                            tomates,
+                                            Fourme
+                                            d’Ambert.</p>
+                                    </div>
+                                    <div>
+                                        <span>Feel Good : 11.90€</span><br>
+                                        <p>Salade, avocat, tomates cerises, carottes râpées, œuf, feta, falafel.
+                                        </p>
+                                    </div>
+                                    <div><span>Little Italy : 12.90€</span><br>
+                                        <p>Salade, jambon, jambon italien, mozzarella, parmesan, tomates
+                                            confites,
+                                            mini
+                                            stick
+                                            mozzarella.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- FIN MODAL SALADES MOBILE-->
+
+            <div class="hiddenmenumobile">
+
+                <div class="menu-box-column-dessert col-12">
+                    <h3 class="bg-danger text-white p-2 mb-3" id="salads">SALADES</h3>
+                    <div>
+                        <span>Salmon salad : 12.90€</span><br>
+                        <p>Salade, tomates confites, concombre, avocat, noix, féta, saumon fumé.</p>
+                    </div>
+                    <div>
+                        <span>Cobb : 12.90€</span><br>
+                        <p>Salade, Filet de poulet pané, poitrine fumée, avocat, oeuf dur, tomates, Fourme
+                            d’Ambert.</p>
+                    </div>
+                    <div>
+                        <span>Feel Good : 11.90€</span><br>
+                        <p>Salade, avocat, tomates cerises, carottes râpées, œuf, feta, falafel.</p>
+                    </div>
+                    <div><span>Little Italy : 12.90€</span><br>
+                        <p>Salade, jambon, jambon italien, mozzarella, parmesan, tomates confites, mini stick
+                            mozzarella.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hiddenmenumobile justify-content-center d-flex">
+
+                <div class="col-6 d-flex w-100">
+                    <div id="carouselExampleControls" class="carousel slide p-2" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active ">
+                                <img class="d-block w-100" src="assets/img/gallery/gallery1.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item ">
+                                <img class="d-block w-100" src="assets/img/gallery/gallery2.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item ">
+                                <img class="d-block w-100" src="assets/img/gallery/gallery3.jpg" alt="Third slide">
+                            </div>
+                            <div class="carousel-item ">
+                                <img class="d-block w-100" src="assets/img/gallery/gallery4.jpg" alt="Third slide">
+                            </div>
+                            <div class="carousel-item ">
+                                <img class="d-block w-100" src="assets/img/gallery/gallery5.jpg" alt="Third slide">
+                            </div>
+                            <div class="carousel-item ">
+                                <img class="d-block w-100" src="assets/img/gallery/gallery6.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- MODAL DESSERT MOBILE -->
+            <div class="modalmobile d-flex justify-content-center " id="modaldessert">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn text-white p-2 m-3 btn-dessert" data-toggle="modal"
+                    data-target="#modaldessertsmobile">
+                    <p class="m-0 mb-3">DESSERTS</p>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal" id="modaldessertsmobile" tabindex="-1" role="dialog"
+                    aria-labelledby="modaldessertsmobileLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-title" id="modaldessertsmobileLabel">
+                                    <h3 class="bg-danger text-white p-2">DESSERTS</h3>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="menu-box-column-dessert">
+                                    <div>
+                                        <span>Sundae caramel au beurre salé : 5.50€</span><br>
+                                    </div>
+                                    <div>
+                                        <span>Mousse au chocolat: 5.50€</span><br>
+                                    </div>
+                                    <div>
+                                        <span>Key Lime Pie: 5.50€</span><br>
+                                    </div>
+                                    <div>
+                                        <span>Cheesecake: 6.00€</span><br>
+                                    </div>
+                                    <div>
+                                        <span>Café gourmand : 6.00€</span><br>
+                                    </div>
+                                    <div>
+                                        <span>Nos Milkshakes 40cl : 6.00€</span>
+                                        <p>Choisissez parmi un des parfums suivants :
+                                            Vanille, Oréo, beurre de cacahuètes, Speculoos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- FIN MODAL DESSERTS MOBILE-->
+
+            <div class="hiddenmenumobile">
+
+                    <div class="row col-12">
+                        <div class="menu-box-column-dessert w-100">
+                            <h3 class="bg-danger text-white p-2" id="desserts">DESSERTS</h3>
+                        </div>
+                        <div class="menu-box-column-dessert">
+                            <div>
+                                <span>Sundae caramel au beurre salé : 5.50€</span><br>
+                            </div>
+                            <div>
+                                <span>Mousse au chocolat: 5.50€</span><br>
+                            </div>
+                            <div>
+                                <span>Key Lime Pie: 5.50€</span><br>
+                            </div>
+                            <div>
+                                <span>Cheesecake: 6.00€</span><br>
+                            </div>
+                            <div>
+                                <span>Café gourmand : 6.00€</span><br>
+                            </div>
+                            <div>
+                                <span>Nos Milkshakes 40cl : 6.00€</span>
+                                <p>Choisissez parmi un des parfums suivants :
+                                    Vanille, Oréo, beurre de cacahuètes, Speculoos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+
+        <!--  CONTACT - RESERVATION -->
+        <section class="mb-2">
+
+            <div class="row pt-0 pb-5 title d-flex justify-content-center">
+
+                <div class="col-12 bg-dark text-white text-center align-middle">
+                    <h2 class="mb-0 p-2" id="contact">Contact - Réservation</h2>
+                </div>
+
+                <div class="col-md-6 p-0">
+                    <div id="contact-img"></div>
+                </div>
+
+                <div class="col-md-6 form1 d-flex flex-wrap align-content-center text-white">
+                    <form>
+                        <div class="contact-block-formulaire-type">
+                            <label for="name">Votre Nom : *</label><br>
+                            <input type="text" id="name" name="name" placeholder="EX: Jean DUPOND" required>
+                        </div>
+                        <div class="contact-block-formulaire-type">
+                            <label for="mail">Votre Email : *</label><br>
+                            <input type="email" id="mail" name="mail" placeholder="EX: abc@gmail.com" required>
+                        </div>
+                        <div class="contact-block-formulaire-type">
+                            <label for="object">Sujet : *</label><br>
+                            <input type="text" id="object" name="object" required>
+                        </div>
+                        <div class="contact-block-formulaire-type">
+                            <label for="message">Votre Message : *</label><br>
+                            <textarea id="message" name="message" placeholder="Message" required></textarea>
+                        </div>
+                        <button id="contact-submit" type="submit" value="Envoyer le message">Envoyer le message</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+</main>
+
+    <!-- COORDONNEES - MAP - MENTIONS LEGALES -->
+    <footer class=" w-100">
+
+        <div class="row p-0">
+
+            <div class="col-md-6 footer-1 text-white p-3 d-flex flex-wrap align-content-center">
+                <h2>Coordonnées :</h2>
+                <ul>
+                    <li class="mb-3 d-flex justify-content-center px-2"><i class="fas fa-clock"></i>Horaires : lun - sam 12:00-13:45 / mardi - ven
+                        19:00-22:00</li>
+                    <li class="mb-3 d-flex justify-content-center px-2"><i class="fas fa-map-marker-alt"></i>Adresse : 35 Rue Pierre Guinard, 76600 Le
+                        Havre, France
+                    </li>
+                    <li class="mb-3 d-flex justify-content-center px-2"><i class="fas fa-phone-alt "></i>Numéro : +33 9 84 37 58 29 </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 footer-2 p-0">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.9558504048323!2d0.12832201591897804!3d49.48534096431054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02eff8ff06fb7%3A0x8719a61ecd8edd6b!2s35%20Rue%20Pierre%20Guinard%2C%2076600%20Le%20Havre!5e0!3m2!1sfr!2sfr!4v1586185580753!5m2!1sfr!2sfr"
+                    allowfullscreen="" aria-hidden="false" tabindex="0" class="border-0"></iframe>
+            </div>
+
+            <div class="col-12 copyright text-center text-white">
+                <a href="#"><i class="fas fa-angle-double-up text-light h4 pt-2"></i></a>
+                <p class="mb-0">© Tous droits réservés - Fifty's American Diner - 2020</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="assets/libs/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/libs/js/bootstrap.bundle.js"></script>
+    <script src="assets/libs/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/a6ad6fac17.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

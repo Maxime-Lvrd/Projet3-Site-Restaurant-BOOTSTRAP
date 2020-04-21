@@ -1,0 +1,534 @@
+body, html {
+  background-color: rgb(255, 255, 255);
+  color: #040f16;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+body, html {
+  background-color: rgb(255, 255, 255);
+  color: #040f16;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.title {
+  margin: 0 auto;
+  width: 100%;
+  padding: 100px 0px 100px 0px;
+  background-color: #ffffff;
+  text-align:left;
+}
+
+
+/* ========================== en tete nav barre + titre avec photo  */
+
+header{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin: 0;
+}
+
+/* ========================== nav barre */
+/* navbar text */
+.navbar
+{
+  position: fixed;
+  top: 0;
+  z-index: 4;
+}
+nav
+{
+  flex-direction: column;
+}
+/* STYLISER LES MENUS */
+nav ul {
+  list-style-type: none;
+}
+nav ul li 
+{
+  float: left;
+  width: 220px;
+  text-align: center;
+  position: relative;
+}
+
+
+nav ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav a {
+  display: block;
+  width: 220px;
+}
+
+nav a:hover {
+  color: rgb(172, 167, 167);
+}
+
+/* FIN DE STYLISATON DES MENU  */
+/* STULISER LES SOUS MENU */
+.sous {
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+nav>ul li:hover .sous {
+  display: block;
+}
+
+.sous li {
+  float: none;
+  width: 100%;
+  text-align: left;
+}
+
+.sous a {
+  padding: 10px;
+  border-bottom: none;
+}
+
+.sous a:hover {
+  border-bottom: none;
+  background-color: RGBa(200, 200, 200, 0.1);
+}
+
+.deroulant>a::after {
+  content: " ▼";
+  font-size: 12px;
+}
+
+/* FIN STULISER LES SOUS MENU */
+/* navbartest */
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  background-color: #33333300;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  background-color: #33333300;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* ========================== titre et presentation */
+
+.containerBurger
+{
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 10vh;
+  background-image: url(../img/burger.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  background-position: center;
+}
+
+#pres-resto-text {
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+
+}
+
+
+/* ========================== zone des plats et menu */
+
+div.container-dishes {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+div.container-dishes div.dishes-bloc {
+  width: calc(33.3% - 20px);
+  margin:10px;
+}
+div.container-dishes div.dishes-bloc div.dishes-img {
+  width:100%;
+  height: auto; 
+  position: relative;
+}
+div.container-dishes div.dishes-bloc div.dishes-img figure {
+  width: 100%;
+  height: 300px;
+  background-size:cover ;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+div.container-dishes div.dishes-bloc:nth-of-type(1) div.dishes-img figure {
+  background-image: url(../img/indianaburger.jpg);
+  }
+div.container-dishes div.dishes-bloc:nth-of-type(2) div.dishes-img figure {
+    background-image: url(../img/dongorske.jpg);
+  }
+div.container-dishes div.dishes-bloc:nth-of-type(3) div.dishes-img figure {
+      background-image: url(../img/saladecobb.jpg);
+  }
+div.container-dishes div.dishes-bloc:nth-of-type(4) div.dishes-img figure {
+        background-image: url(../img/salmonsalad.png);
+  }
+div.container-dishes div.dishes-bloc:nth-of-type(5) div.dishes-img figure {
+          background-image: url(../img/milkshake.jpg);
+  }
+div.container-dishes div.dishes-bloc:nth-of-type(6) div.dishes-img figure {
+            background-image: url(../img/cafegourmand.jpg);
+  }
+div.container-dishes div.dishes-bloc div.dishes-img .text-survol-dishes {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width:100%;
+  height: 300px;
+  transition: 0.5s all;
+  filter: opacity(0);
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: white;
+  background-color: #1f2229;
+}
+div.container-dishes div.dishes-bloc div.dishes-img .text-survol-dishes p:hover {
+  filter: opacity(1);
+}
+div.container-dishes div.dishes-bloc div.dishes-img .text-survol-dishes:hover {
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  height: 300px;
+  transition: 0.5s all;
+  filter: opacity(0.8);
+}
+
+/* ========================== zone menu du resto  */
+.btn-burger {
+  background: url(../img/gallery/gallery2.jpg);
+  background-size: cover;
+  width: 300px;
+  height: 150px;
+  border-radius: 0;
+}
+.btn-pimp {
+  background: url(../img/gallery/gallery4.jpg);
+  background-size: cover;
+  width: 300px;
+  height: 150px;
+  border-radius: 0;
+}
+.btn-salad {
+  background: url(../img/gallery/gallery7.jpg);
+  background-size: cover;
+  width: 300px;
+  height: 150px;
+  border-radius: 0;
+}
+.btn-dessert {
+  background: url(../img/gallery/gallery8.jpg);
+  background-size: cover;
+  width: 300px;
+  height: 150px;
+  border-radius: 0;
+}
+#menu-box{
+  text-align: left;
+  margin: 0 auto;
+  width: 80%;
+  padding: 100px 0px 70px 0px;
+}
+#title-menu{
+  width: calc(100% - 20px);
+  margin: 10px;
+}
+.menu-box-column h3, .menu-box-column-dessert h3{
+  color: white;
+  background-color: #C72C41;
+  padding: 10px;
+  font-size: 1.75rem;
+}
+.menu-box-column h4{
+  color: #1f2229;
+  font-size: 1.4rem;
+  margin: 0;
+}
+.menu-box-column h5{
+  color: #C72C41;
+  margin: 0;
+  font-size: 1rem;
+}
+.menu-box-column p{
+  color: #1f2229;
+  margin-top: 0.5rem;
+}
+.menu-box-column span, .menu-box-column-dessert span{
+  color: #C72C41;
+  font-size: 1.5rem;
+}
+.menu-box-column div, .menu-box-column-dessert div{
+  color: #1f2229;
+  margin-bottom: 1.5rem; 
+}
+
+.dessert
+{
+  margin: 10px;
+  margin-left:-40px;
+  margin-right: -40px;
+  margin-top: 25px;
+}
+/* ========================== slider debut */
+/* 
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */ 
+
+.slideshow-container {
+  max-width:500px;
+  
+  position: relative;
+  display: flex;
+  margin: 80px auto 0 auto;
+}
+.slideshow-container img {
+ width: 100%;
+ height: auto;
+ 
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white!important;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #C72C41;
+}
+
+/* Caption text */
+.text {
+  color: white!important;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: white!important;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.espace-parralax{
+  background-image: url(../img/parralaximg.jpg);
+  height: 30rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact-img{
+  background-image: url(../img/contact-left.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30rem;
+  width: 100%;
+}
+.form1 {
+  background-color: #C72C41;
+  height: auto;
+  width: 100%;
+}
+form {
+  width: 100%;
+}
+.contact-block-formulaire-type{
+  padding: 0.5rem 0;
+  width: 100%;
+  margin-left: 1rem;
+}
+.contact-block-formulaire-type input,textarea{
+  padding: 0.4rem;
+  background-color: #ffffff;
+  border: 0;
+  width: 90%;
+}
+input {
+  height: 26px;
+}
+textarea{
+  height: 10rem;
+}
+label {
+  margin-bottom: 0px;
+}
+#contact-submit{
+  padding: 0.2rem;
+  background-color: white;
+  color: #1f2229;
+  margin-left: 1rem;
+  border: 0;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.5s;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+#contact-submit:hover{
+  color: white;
+  background-color: #1f2229;
+  border: 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+/* ========================== Maps */
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* ========================== pied de page les mention legales */
+
+.footer-1 {
+  background-color:#1f2229;
+  height: 300px;
+}
+.footer-2 {
+  height: 300px;
+}
+footer li {
+  list-style-type: none;
+  font-size: 20px;
+}
+footer li i{ 
+  color:#C72C41;  
+  padding-right: 15px;
+  width: auto;
+  height: auto;
+}
+.copyright {
+  width: 100%;
+  height: auto;
+  background-color:#C72C41;
+}

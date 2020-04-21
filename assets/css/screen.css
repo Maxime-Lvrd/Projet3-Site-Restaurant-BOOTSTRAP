@@ -1,0 +1,149 @@
+@media screen and (max-width: 768px)
+{
+  ul
+  {
+    display: contents;
+  }
+  .logo
+  {
+    width: 13em;
+    height: auto;
+  }
+  .sous {
+    display: none;
+    position: absolute;
+    width: 100%;
+  }
+  
+  nav>ul li:hover .sous {
+    display: block;
+  }
+  
+  .sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .sous a {
+    padding: 10px;
+    border-bottom: none;
+  }
+  
+  .sous a:hover {
+    border-bottom: none;
+    background-color: RGBa(200, 200, 200, 0.1);
+  }
+  
+}
+
+@media screen and (min-width: 768px)
+{
+  ul
+  {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: -0.5rem;
+  }
+  .logo
+  {
+    width: 14em;
+    height: auto;
+  }
+}
+@media screen and (max-width:768px)
+{
+ .container-dishes
+ {
+   visibility: hidden;
+   display: none;
+ }
+ .carouselleselct
+ {
+   margin-top: -40em;
+ }
+}
+@media screen and (min-width:770px)
+{
+ .carouselleselct
+ {
+   visibility: hidden;
+   display: none;
+ }
+ #accueil
+ {
+   margin-top: 70px;
+ }
+
+} 
+@media screen and (max-width:770px)
+{
+  #modaldessert 
+  {
+    margin-top: -180px;
+  }
+  #plats
+  {
+    margin-top: -350px;
+  }
+  #accueil
+  {
+    margin-top: 74px;
+  }
+  .menu
+  {
+    visibility:hidden;
+    display: none;
+  }
+}
+@media screen and (max-width:414px)
+{
+  #modaldessert 
+  {
+    margin-top: -100px;
+  }
+  #plats
+  {
+    margin-top: -350px;
+  }
+  
+}
+
+@media screen and (max-width:768px)
+  {
+   .container-dishes, .hiddenmenumobile
+   {
+     visibility: hidden;
+     display: none;
+   }
+   .carouselleselct
+   {
+     margin-top: -40em;
+   }
+  }
+  @media screen and (min-width:770px)
+  {
+   .carouselleselct, .modalmobile
+   {
+     visibility: hidden;
+     display: none;
+   }
+  }
+  
+/* @media screen and (max-width:425px)
+ {
+  .espace-parralax {
+    height: 10rem;
+  } */
+  @media screen and (max-width:768px) 
+  {
+    #contact-img {
+      width: 100%;
+      height: 15rem;
+    }
+  }
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
